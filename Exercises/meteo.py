@@ -9,7 +9,7 @@ class Snow:
                 cm = int(input("Quantita' neve caduta[cm]... "))
                 precipitazioni.append(cm)
 
-        print("")
+        print("") # Stampa una riga vuota per differenziare gli input dagli output
 
         MAX = max(precipitazioni)
         print("La precipitazione piu' abbondante e' stata di: " + str(MAX) + "cm")
