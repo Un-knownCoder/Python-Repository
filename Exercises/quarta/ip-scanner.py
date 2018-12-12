@@ -89,7 +89,7 @@ if (ip[0] < 127):
 	print("HostMin:   " + str(ip[0]) + ".0.0.1       >> " + str(calculateBin(ip[0])) + ".00000000.00000000.00000001")
 	print("HostMax:   " + str(ip[0]) + ".255.255.254 >> " + str(calculateBin(ip[0])) + ".11111111.11111111.11111110")
 	print("BroadCast: " + str(ip[0]) + ".255.255.255 >> " + str(calculateBin(ip[0])) + ".11111111.11111111.11111111")
-	print("Hosts/Net: " + str(2**24))
+	print("Hosts/Net: " + str(2**24 - 2))
 	print("")
    
 	if(ip[1] == 0 and ip[2] == 0 and ip[3] == 0):
@@ -110,7 +110,7 @@ elif (ip[0] < 192):
 	print("HostMin:   " + str(ip[0]) + "." + str(ip[1]) + ".0.1     >> " + str(calculateBin(ip[0])) + "." + str(calculateBin(ip[1])) + ".00000000.00000001")
 	print("HostMax:   " + str(ip[0]) + "." + str(ip[1]) + ".255.254 >> " + str(calculateBin(ip[0])) + "." + str(calculateBin(ip[1])) + ".11111111.11111110")
 	print("BroadCast: " + str(ip[0]) + "." + str(ip[1]) + ".255.255 >> " + str(calculateBin(ip[0])) + "." + str(calculateBin(ip[1])) + ".11111111.11111111")
-	print("Hosts/Net: " + str(2**16))
+	print("Hosts/Net: " + str(2**16 - 2))
 	print("")
    
 	if(ip[3] == 0 and ip[2] == 0):
@@ -130,7 +130,7 @@ elif (ip[0] < 224):
 	print("HostMin:   " + str(ip[0]) + "." + str(ip[1]) + "." + str(ip[2]) + ".1   >> " + str(calculateBin(ip[0])) + "." + str(calculateBin(ip[1])) + "." + str(calculateBin(ip[2])) + ".00000001")
 	print("HostMax:   " + str(ip[0]) + "." + str(ip[1]) + "." + str(ip[2]) + ".254 >> " + str(calculateBin(ip[0])) + "." + str(calculateBin(ip[1])) + "." + str(calculateBin(ip[2])) + ".11111110")
 	print("BroadCast: " + str(ip[0]) + "." + str(ip[1]) + "." + str(ip[2]) + ".255 >> " + str(calculateBin(ip[0])) + "." + str(calculateBin(ip[1])) + "." + str(calculateBin(ip[2])) + ".11111111")
-	print("Hosts/Net: " + str(2**8))
+	print("Hosts/Net: " + str(2**8 - 2))
 	print()
    
 	if(ip[3] == 0):
