@@ -1,6 +1,6 @@
 ## Variables
 
-In python there isn't any variable type specification, in fact you have to create them simply writing their names:
+In python there isn't any variable type specification, in fact you just need to write the variable name followed by an equal sign and a value to give it the first assignment:
 ```py
 num = 10               # a numeric variable
 string = "Hello World" # a string variable
